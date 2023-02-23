@@ -1,0 +1,268 @@
+/*==========================================
+Barra de navegacion
+==========================================*/
+.navbar{
+    padding: 2rem;   
+}
+/*---- Llevo el icono a un lado y la lista de links al otro -----*/
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+/*==========================================
+Media query
+==========================================*/
+/*---- Desaparezco el icono cuando la pantalla es menos a 767 px porque ocupa mucho lugar -----*/
+@media screen and (max-width:767px){
+    .navbar-brand{
+        display: none;
+    }
+}
+/*---- Seccion proyectos: Reduzco el tamaño de la fuente y de los iconos en pequeños dispositivos porque sino quedan muy al borde de la imagen -----*/
+@media screen and (max-width: 400px) {
+  .overlay p {
+    font-size: 18px;
+  }
+
+  .overlay i {
+    font-size: 40px;
+  }
+}
+
+/*==========================================
+Estilos generales
+==========================================*/
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*align-items:stretch;*/
+}
+
+a:link { 
+    text-decoration:none;
+} 
+a:visited {
+     text-decoration:none;
+}
+h1{
+    font-size: 2.5rem;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+.seccion-oscura{
+    color: white;
+    background-color: #651452;  
+}
+
+.seccion-clara{
+    color: black;
+    background-color: rgb(230, 227, 230);  
+}
+
+.seccion-titulo{
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+.seccion-descripcion{
+    font-size: 1.2rem;
+    color:#584e4e;
+
+}
+
+.seccion-texto{
+    font-size: 1.2rem;
+}
+
+.btn-info {
+    font-size: 1.1rem;
+    margin: 20px;
+    font-weight: bold;
+} 
+
+.texto-negro{
+    color: black;
+}
+.texto-blanco{
+    color: white;
+}
+/*==========================================
+Boton de contacto fijo
+==========================================*/
+
+#volver {
+    color:beige;
+    font-family: 'Quicksand', cursive;
+    }
+#inicio {
+    position: fixed;
+    height: 80px;
+    width: 80px;
+    background: black;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 100%;
+    color: beige;
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 80px;
+    z-index: 1;
+
+    
+}
+
+
+
+
+
+/*==========================================
+Seccion principal (Hero)
+==========================================*/
+.principal{
+    background-color: #f5f6f7;
+    min-height: 450px; /*---- La altura minima perimite que se estire y que se vea correctamente -----*/
+    text-align: center;
+}
+
+.hero-principal{
+    padding: 3rem;  
+}
+
+
+.img-perfil{
+    border-radius: 25%;
+    height: 20rem;
+}
+
+.hero-principal h2{
+    font-size: 1.5rem;
+    color:#615151
+}
+
+/*==========================================
+Sobre Mi
+==========================================*/    
+
+
+.sobre-mi {
+  height: 500px;
+  padding: 10px;
+}
+
+.sobre-mi .contenedor {
+    max-width: 600px;
+    text-align: center;
+
+}
+
+/*==========================================
+Experiencia
+==========================================*/
+
+.experiencia {
+    padding: 40px 40px 60px 40px;
+}
+
+
+.experiencia .columna{
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in ;
+}
+
+.experiencia .columna:hover{
+    color: white;
+    background-color: #1b1b32;
+}
+
+.experiencia i {
+    font-size: 2.5rem;
+    color: #7ade30;
+    background-color: #0a0a23;
+    padding: 8px 19px;
+    border-radius: 50%;
+
+}
+
+.experiencia-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badges-contenedor{
+    font-size: 20px;
+    font-weight: bold;
+    margin:10px 0;
+}
+
+.badge{
+    margin: 5px;
+}
+
+
+
+/*==========================================
+Footer
+==========================================*/    
+
+footer{
+    min-height: 500px;
+}
+
+footer img{
+    color: white;
+}
+
+.footer-logo {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+    background: white;
+    border-radius: 100%;
+    padding: 5px;
+    border: 4px solid black;
+}
+
+.footer-texto{
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.iconos-redes-sociales a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover{
+    background-color: white;
+    border: 2px solid rgb(13, 11, 253);
+}
+
+.iconos-redes-sociales a:hover i {
+    color: black;
+
+}
